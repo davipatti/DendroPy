@@ -3098,7 +3098,7 @@ class Tree(
 
     def ladderize(self, ascending=True, default_order=False):
         """
-        Sorts child nodes in ascending (if ``ascending`` is |False|) or descending (if
+        Sorts child nodes in ascending (if ``ascending`` is |True|) or descending (if
         ``ascending`` is |False|) order in terms of the number of children each child
         node has. If ``default_order`` is |True| then leaf nodes get sorted by taxon
         labels when they are in polytomies.
