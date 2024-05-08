@@ -3107,7 +3107,7 @@ class Tree(
         if default_order:
             order = tuple(sorted(leaf.taxon.label for leaf in self.leaf_node_iter()))
 
-        def dorder(node) -> int:
+        def dorder(node):  # -> int
             if default_order:
                 try:
                     return order.index(node.taxon.label)
